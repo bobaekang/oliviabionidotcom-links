@@ -5,7 +5,7 @@
     "build:tailwind": "NODE_ENV=production tailwindcss build src/tailwind.css -o public/global.css",
     "build": "npm run build:tailwind && rollup -c",
     "dev": "npm run build:tailwind && rollup -c -w",
-    "start": "sirv public",
+    "start": "sirv public --single",
     "format": "prettier --write ."
   },
   "devDependencies": {
