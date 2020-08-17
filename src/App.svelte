@@ -6,6 +6,7 @@
   let page
   router('/', () => (page = Home))
   router('/affiliates', () => (page = Affiliates))
+  router('*', () => router.redirect('/'))
   router.start()
 </script>
 
