@@ -9,6 +9,14 @@
   router.start()
 </script>
 
-<main>
-  <svelte:component this={page} />
+<style>
+  main {
+    background-color: #c27ba0;
+  }
+</style>
+
+<main class="min-h-screen">
+  <div class="max-w-screen-sm m-auto p-4 lg:pt-20">
+    <svelte:component this={page} />
+  </div>
 </main>
