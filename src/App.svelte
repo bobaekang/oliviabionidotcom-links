@@ -24,6 +24,9 @@
 <svelte:head>
   <meta property="description" content={description} />
   <meta property="og:description" content={description} />
+  <meta
+    property="og:image"
+    content="https://links.oliviabioni.com/assets/avatar.jpg" />
 </svelte:head>
 
 <main class="min-h-screen">
