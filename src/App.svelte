@@ -26,7 +26,7 @@
   <meta property="og:description" content={description} />
   <meta property="og:title" content="Links | Olivia Bioni Wellness" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://links.oliviabioni.com/" />
+  <meta property="og:url" content={`https://links.oliviabioni.com${path}`} />
   <meta
     property="og:image"
     content="https://links.oliviabioni.com/assets/avatar.jpg" />
