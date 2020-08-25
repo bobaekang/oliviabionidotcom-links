@@ -29,7 +29,7 @@
   <meta property="og:url" content={`https://links.oliviabioni.com${path}`} />
   <meta
     property="og:image"
-    content="https://links.oliviabioni.com/assets/avatar.jpg" />
+    content="https://links.oliviabioni.com/assets/og_image.jpg" />
 </svelte:head>
 
 <main class="min-h-screen">
