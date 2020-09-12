@@ -1,15 +1,15 @@
 export const homeLinks = [
   {
     avatar: 'assets/ptm.jpg',
-    href: 'https://pilatesteachersmanual.oliviabioni.com',
-    newtab: true,
-    title: 'Listen to Pilates Teachers’ Manual podcast 🎧',
+    href: '/pilatesteachersmanual',
+    newtab: false,
+    title: 'Pilates Teachers’ Manual podcast 🎧',
   },
   {
     avatar: 'assets/psm.jpg',
-    href: 'https://pilatesstudentsmanual.oliviabioni.com',
-    newtab: true,
-    title: 'Listen to Pilates Students’ Manual podcast 🎧',
+    href: '/pilatesstudentsmanual',
+    newtab: false,
+    title: 'Pilates Students’ Manual podcast 🎧',
   },
   {
     avatar: 'assets/discount.svg',
@@ -18,16 +18,10 @@ export const homeLinks = [
     title: 'Save on products I love ❤️',
   },
   {
-    avatar: 'assets/instagram.png',
-    href: 'https://www.instagram.com/pilatesteachersmanual/',
+    avatar: 'assets/youtube.png',
+    href: 'https://www.youtube.com/channel/UCOLgATdG1_PDxMiFOuv_gwg',
     newtab: true,
-    title: 'Follow @PilatesTeachersManual',
-  },
-  {
-    avatar: 'assets/instagram.png',
-    href: 'https://www.instagram.com/pilatesstudentsmanual/',
-    newtab: true,
-    title: 'Follow @PilatesStudentsManual',
+    title: 'Subscribe to my YouTube channel',
   },
   {
     avatar: 'assets/instagram.png',
@@ -94,5 +88,73 @@ export const affiliateLinks = [
     newtab: true,
     title: 'Boka toothpaste',
     detail: '15% off of your first order!',
+  },
+]
+
+export const pilatesStudentsManualLinks = [
+  {
+    avatar: 'assets/psm.jpg',
+    href: 'https://pilatesstudentsmanual.oliviabioni.com',
+    newtab: true,
+    title: 'Listen to Pilates Students’ Manual podcast 🎧',
+  },
+  {
+    avatar: 'assets/youtube.png',
+    href:
+      'https://www.youtube.com/channel/UCOLgATdG1_PDxMiFOuv_gwg/search?query=Pilates+Students%27+Manual',
+    newtab: true,
+    title: "Find Pilates Students' Manual on YouTube",
+  },
+  {
+    avatar: 'assets/instagram.png',
+    href: 'https://www.instagram.com/pilatesstudentsmanual/',
+    newtab: true,
+    title: 'Follow @PilatesStudentsManual',
+  },
+  {
+    avatar: 'assets/facebook.png',
+    href: 'https://facebook.com/pilatesstudentsmanual/',
+    newtab: true,
+    title: "Like Pilates Students' Manual page",
+  },
+  {
+    avatar: 'assets/discount.svg',
+    href: '/affiliates',
+    newtab: false,
+    title: 'Save on products I love ❤️',
+  },
+]
+
+export const pilatesTeachersManualLinks = [
+  {
+    avatar: 'assets/ptm.jpg',
+    href: 'https://pilatesteachersmanual.oliviabioni.com',
+    newtab: true,
+    title: 'Listen to Pilates Teachers’ Manual podcast 🎧',
+  },
+  {
+    avatar: 'assets/youtube.png',
+    href:
+      'https://www.youtube.com/channel/UCOLgATdG1_PDxMiFOuv_gwg/search?query=Pilates+Teachers%27+Manual',
+    newtab: true,
+    title: "Find Pilates Teachers' Manual on YouTube",
+  },
+  {
+    avatar: 'assets/instagram.png',
+    href: 'https://www.instagram.com/pilatesteachersmanual/',
+    newtab: true,
+    title: 'Follow @PilatesTeachersManual',
+  },
+  {
+    avatar: 'assets/facebook.png',
+    href: 'https://facebook.com/pilatesteachersmanual/',
+    newtab: true,
+    title: "Like Pilates Teachers' Manual page",
+  },
+  {
+    avatar: 'assets/discount.svg',
+    href: '/affiliates',
+    newtab: false,
+    title: 'Save on products I love ❤️',
   },
 ]

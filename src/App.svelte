@@ -2,10 +2,20 @@
   import router from 'page'
   import Home from './pages/Home.svelte'
   import Affiliates from './pages/Affiliates.svelte'
+  import PilatesStudentsManual from './pages/PilatesStudentsManual.svelte'
+  import PilatesTeachersManual from './pages/PilatesTeachersManual.svelte'
 
   let page, path
   router('/', () => ([page, path] = [Home, '/']))
   router('/affiliates', () => ([page, path] = [Affiliates, '/affiliates']))
+  router(
+    '/pilatesstudentsmanual',
+    () => ([page, path] = [PilatesStudentsManual, '/pilatesstudentsmanual'])
+  )
+  router(
+    '/pilatesteachersmanual',
+    () => ([page, path] = [PilatesTeachersManual, '/pilatessteachermanual'])
+  )
   router('*', () => router.redirect('/'))
   router.start()
 
