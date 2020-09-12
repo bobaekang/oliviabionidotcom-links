@@ -8,11 +8,11 @@
 
 <a
   class="flex align-center w-full border border-solid border-white
-  hover:bg-white hover:bg-opacity-25 text-white rounded-lg my-4 p-4"
+    hover:bg-white hover:bg-opacity-25 text-white rounded-lg my-4 p-4"
   {href}
   target={newtab ? '_block' : ''}
   rel={newtab ? 'noreferrer noopener' : ''}>
-  <img class="h-12 w-12" src={avatar} alt="Link avatar" />
+  <img class="h-12 w-12 rounded-md" src={avatar} alt="Link avatar" />
 
   <div class="flex flex-col justify-center px-4">
     <strong>{title}</strong>
