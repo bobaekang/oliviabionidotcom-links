@@ -20,6 +20,7 @@
   router.start()
 
   $: description = getDescription(path)
+  $: imagePath = getImagePath(path)
   function getDescription(path) {
     switch (path) {
       case '/affiliates':
@@ -30,6 +31,16 @@
         return 'Your guide to becoming a great Pilates teacher! 💪'
       default:
         return "Links to Olivia's podcasts, social, website, and more! 😍"
+    }
+  }
+  function getImagePath(path) {
+    switch (path) {
+      case '/pilatesstudentsmanual':
+        return 'https://links.oliviabioni.com/assets/og_psm.png'
+      case '/pilatesteachersmanual':
+        return 'https://links.oliviabioni.com/assets/og_ptm.png'
+      default:
+        return 'https://links.oliviabioni.com/assets/og_image.jpg'
     }
   }
 </script>
@@ -50,9 +61,7 @@
   <meta property="og:title" content="Links | Olivia Bioni Wellness" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content={`https://links.oliviabioni.com${path}`} />
-  <meta
-    property="og:image"
-    content="https://links.oliviabioni.com/assets/og_image.jpg" />
+  <meta property="og:image" content={imagePath} />
 </svelte:head>
 
 <main class="min-h-screen">
