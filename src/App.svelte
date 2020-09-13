@@ -19,10 +19,19 @@
   router('*', () => router.redirect('/'))
   router.start()
 
-  $: description =
-    path === '/affiliates'
-      ? 'Enjoy discounts on products I use and love with my affiliate links! 😍 Support my work on Buy Me A Coffee. ☕️'
-      : "Links to Olivia's podcasts, social, website, and more! 😍 Support my work on Buy Me A Coffee. ☕️"
+  $: description = getDescription(path)
+  function getDescription(path) {
+    switch (path) {
+      case '/affiliates':
+        return 'Enjoy discounts on products I use and love with my affiliate links! 😍'
+      case '/pilatesstudentsmanual':
+        return 'Helping you to get the most out of your next Pilates class! 😎'
+      case '/pilatesteachersmanual':
+        return 'Your guide to becoming a great Pilates teacher! 💪'
+      default:
+        return "Links to Olivia's podcasts, social, website, and more! 😍"
+    }
+  }
 </script>
 
 <style>
@@ -32,8 +41,12 @@
 </style>
 
 <svelte:head>
-  <meta name="description" content={description} />
-  <meta property="og:description" content={description} />
+  <meta
+    name="description"
+    content={`${description} Support my work on Buy Me A Coffee. ☕️`} />
+  <meta
+    property="og:description"
+    content={`${description} Support my work on Buy Me A Coffee. ☕️`} />
   <meta property="og:title" content="Links | Olivia Bioni Wellness" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content={`https://links.oliviabioni.com${path}`} />
