@@ -14,7 +14,7 @@
   )
   router(
     '/pilatesteachersmanual',
-    () => ([page, path] = [PilatesTeachersManual, '/pilatessteachermanual'])
+    () => ([page, path] = [PilatesTeachersManual, '/pilatesteachersmanual'])
   )
   router('*', () => router.redirect('/'))
   router.start()
