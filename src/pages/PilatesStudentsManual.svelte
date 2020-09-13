@@ -1,24 +1,9 @@
 <script>
-  import Profile from '../components/Profile.svelte'
-  import BuyMeACoffeeButton from '../components/BuyMeACoffeeButton.svelte'
-  import LinkButton from '../components/LinkButton.svelte'
-  import { pilatesStudentsManualLinks } from '../config'
+  import Layout from '../Layout.svelte'
+  import { pilatesStudentsManualLinks as links } from '../config'
+
+  const descriptionHtml =
+    'Helping you to get the most out of your next Pilates class!'
 </script>
 
-<div class="flex flex-wrap justify-center">
-  <div class="mb-4">
-    <a class="block text-center text-white italic mb-2" href="/">
-      {'< Back to home'}
-    </a>
-    <Profile />
-  </div>
-
-  <div class="w-full">
-    <div class="text-center text-white">
-      Helping you to get the most out of your next Pilates class!
-    </div>
-    {#each pilatesStudentsManualLinks as link}
-      <LinkButton {...link} />
-    {/each}
-  </div>
-</div>
+<Layout {descriptionHtml} {links} />
