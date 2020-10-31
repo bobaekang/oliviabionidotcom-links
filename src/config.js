@@ -12,6 +12,12 @@ export const homeLinks = [
     title: 'Pilates Students’ Manual podcast 🎧',
   },
   {
+    avatar: 'assets/education.svg',
+    href: '/continuingeducation',
+    newtab: false,
+    title: 'Earn your Continuing Education Credits ❤️',
+  },
+  {
     avatar: 'assets/discount.svg',
     href: '/affiliates',
     newtab: false,
