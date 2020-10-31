@@ -2,12 +2,17 @@
   import router from 'page'
   import Home from './pages/Home.svelte'
   import Affiliates from './pages/Affiliates.svelte'
+  import ContinuingEducation from './pages/ContinuingEducation.svelte'
   import PilatesStudentsManual from './pages/PilatesStudentsManual.svelte'
   import PilatesTeachersManual from './pages/PilatesTeachersManual.svelte'
 
   let page, path
   router('/', () => ([page, path] = [Home, '/']))
   router('/affiliates', () => ([page, path] = [Affiliates, '/affiliates']))
+  router(
+    '/continuingeducation',
+    () => ([page, path] = [ContinuingEducation, '/continuingeducation'])
+  )
   router(
     '/pilatesstudentsmanual',
     () => ([page, path] = [PilatesStudentsManual, '/pilatesstudentsmanual'])
@@ -25,6 +30,8 @@
     switch (path) {
       case '/affiliates':
         return 'Enjoy discounts on products I use and love with my affiliate links! 😍'
+      case '/cec':
+        return 'Try these awesome programs for your Continuing Education Credit! 🤓'
       case '/pilatesstudentsmanual':
         return 'Helping you to get the most out of your next Pilates class! 😎'
       case '/pilatesteachersmanual':
