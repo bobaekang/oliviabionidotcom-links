@@ -91,6 +91,16 @@ export const affiliateLinks = [
   },
 ]
 
+export const continuingEducationLinks = [
+  {
+    avatar: 'assets/chelseacorley.png',
+    href: 'https://links.oliviabioni.com/chelseacorley',
+    newtab: true,
+    title: 'Integrated Teaching System by Chelsea Corley',
+    detail: '"Become the Pilates Instructor Clients Can\'t Live Without!"',
+  },
+]
+
 export const pilatesStudentsManualLinks = [
   {
     avatar: 'assets/psm.jpg',
