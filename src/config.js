@@ -15,7 +15,7 @@ export const homeLinks = [
     avatar: 'assets/education.svg',
     href: '/continuingeducation',
     newtab: false,
-    title: 'Earn your Continuing Education Credits ❤️',
+    title: 'Earn your Continuing Education Credits 📔',
   },
   {
     avatar: 'assets/discount.svg',
