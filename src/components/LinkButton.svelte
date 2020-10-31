@@ -14,10 +14,18 @@
   rel={newtab ? 'noreferrer noopener' : ''}>
   <img class="h-12 w-12 rounded-md" src={avatar} alt="Link avatar" />
 
-  <div class="flex flex-col justify-center px-4">
-    <strong>{title}</strong>
-    {#if detail}
-      <div>{detail}</div>
+  <div class="flex justify-between items-center w-full">
+    <div class="flex flex-col justify-center px-4 w-full">
+      <strong>{title}</strong>
+      {#if detail}
+        <div>{detail}</div>
+      {/if}
+    </div>
+    {#if newtab}
+      <img
+        class="h-4 w-4"
+        src="../assets/external-link.svg"
+        alt="external link" />
     {/if}
   </div>
 </a>
