@@ -3,4 +3,4 @@
   import { home } from '../config'
 </script>
 
-<Layout isHome {...home} />
+<Layout {...home} />

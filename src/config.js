@@ -1,5 +1,6 @@
 export default {
   home: {
+    isHome: true,
     links: [
       {
         avatar: 'assets/ptm.jpg',
