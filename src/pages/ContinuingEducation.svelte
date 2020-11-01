@@ -2,9 +2,7 @@
   import Layout from '../Layout.svelte'
   import { continuingEducation } from '../config'
 
-  const { links } = continuingEducation
-  const descriptionHtml =
-    'My favorite programs for earning Continuing Education Credits. 👍<br /> I might get commissions from the following links.'
+  const { descriptionHtml, links } = continuingEducation
 </script>
 
 <Layout {descriptionHtml} {links} />

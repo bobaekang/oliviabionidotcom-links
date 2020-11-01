@@ -46,6 +46,8 @@ export default {
     ],
   },
   affiliates: {
+    descriptionHtml:
+      'Here are some products I use and love. ❤️<br />Click any button below and get a discount on your first order! 🤩',
     links: [
       {
         avatar: 'assets/fabletics.svg',
@@ -103,6 +105,8 @@ export default {
     ],
   },
   continuingEducation: {
+    descriptionHtml:
+      'My favorite programs for earning Continuing Education Credits. 👍<br /> I might get commissions from the following links.',
     links: [
       {
         avatar: 'assets/chelseacorley.png',
@@ -114,6 +118,8 @@ export default {
     ],
   },
   pilatesStudentsManual: {
+    descriptionHtml:
+      'Helping you to get the most out of your next Pilates class!',
     links: [
       {
         avatar: 'assets/psm.jpg',
@@ -149,6 +155,7 @@ export default {
     ],
   },
   pilatesTeachersManual: {
+    descriptionHtml: 'Your guide to becoming a great Pilates teacher!',
     links: [
       {
         avatar: 'assets/ptm.jpg',
