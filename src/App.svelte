@@ -1,25 +1,27 @@
 <script>
   import router from 'page'
-  import Home from './pages/Home.svelte'
-  import Affiliates from './pages/Affiliates.svelte'
-  import ContinuingEducation from './pages/ContinuingEducation.svelte'
-  import PilatesStudentsManual from './pages/PilatesStudentsManual.svelte'
-  import PilatesTeachersManual from './pages/PilatesTeachersManual.svelte'
+  import Layout from './Layout.svelte'
+  import config from './config'
 
-  let page, path
-  router('/', () => ([page, path] = [Home, '/']))
-  router('/affiliates', () => ([page, path] = [Affiliates, '/affiliates']))
+  let props, path
+  router('/', () => ([props, path] = [config.home, '/']))
+  router(
+    '/affiliates',
+    () => ([props, path] = [config.affiliates, '/affiliates'])
+  )
   router(
     '/continuingeducation',
-    () => ([page, path] = [ContinuingEducation, '/continuingeducation'])
+    () => ([props, path] = [config.continuingEducation, '/continuingeducation'])
   )
   router(
     '/pilatesstudentsmanual',
-    () => ([page, path] = [PilatesStudentsManual, '/pilatesstudentsmanual'])
+    () =>
+      ([props, path] = [config.pilatesStudentsManual, '/pilatesstudentsmanual'])
   )
   router(
     '/pilatesteachersmanual',
-    () => ([page, path] = [PilatesTeachersManual, '/pilatesteachersmanual'])
+    () =>
+      ([props, path] = [config.pilatesTeachersManual, '/pilatesteachersmanual'])
   )
   router('*', () => router.redirect('/'))
   router.start()
@@ -73,6 +75,6 @@
 
 <main class="min-h-screen">
   <div class="max-w-screen-sm m-auto p-4 lg:pt-20">
-    <svelte:component this={page} />
+    <Layout {...props} />
   </div>
 </main>
