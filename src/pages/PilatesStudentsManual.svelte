@@ -1,8 +1,6 @@
 <script>
   import Layout from '../Layout.svelte'
   import { pilatesStudentsManual } from '../config'
-
-  const { descriptionHtml, links } = pilatesStudentsManual
 </script>
 
-<Layout {descriptionHtml} {links} />
+<Layout {...pilatesStudentsManual} />
