@@ -1,6 +1,6 @@
 <script>
   import router from 'page'
-  import Layout from './Layout.svelte'
+  import Page from './Page.svelte'
   import config from './config'
 
   let props, path
@@ -75,6 +75,6 @@
 
 <main class="min-h-screen">
   <div class="max-w-screen-sm m-auto p-4 lg:pt-20">
-    <Layout {...props} />
+    <Page {...props} />
   </div>
 </main>
