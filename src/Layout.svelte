@@ -1,6 +1,5 @@
 <script>
   import Profile from './components/Profile.svelte'
-  import BuyMeACoffeeButton from './components/BuyMeACoffeeButton.svelte'
   import LinkButton from './components/LinkButton.svelte'
 
   export let isHome
