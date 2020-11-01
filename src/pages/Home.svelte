@@ -1,6 +1,8 @@
 <script>
   import Layout from '../Layout.svelte'
-  import { homeLinks as links } from '../config'
+  import { home } from '../config'
+
+  const { links } = home
 </script>
 
 <Layout isHome {links} />

@@ -1,7 +1,8 @@
 <script>
   import Layout from '../Layout.svelte'
-  import { pilatesTeachersManualLinks as links } from '../config'
+  import { pilatesTeachersManual } from '../config'
 
+  const { links } = pilatesTeachersManual
   const descriptionHtml = 'Your guide to becoming a great Pilates teacher!'
 </script>
 
