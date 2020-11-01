@@ -32,7 +32,7 @@
     switch (path) {
       case '/affiliates':
         return 'Enjoy discounts on products I use and love with my affiliate links! 😍'
-      case '/cec':
+      case '/continuingeducation':
         return 'Try these awesome programs for your Continuing Education Credit! 🤓'
       case '/pilatesstudentsmanual':
         return 'Helping you to get the most out of your next Pilates class! 😎'
