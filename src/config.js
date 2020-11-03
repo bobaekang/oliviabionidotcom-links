@@ -184,6 +184,12 @@ export default {
         title: "Like Pilates Teachers' Manual page",
       },
       {
+        avatar: 'assets/education.svg',
+        href: '/continuingeducation',
+        newtab: false,
+        title: 'Earn your Continuing Education Credits 📔',
+      },
+      {
         avatar: 'assets/discount.svg',
         href: '/affiliates',
         newtab: false,
