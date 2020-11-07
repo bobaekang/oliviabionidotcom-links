@@ -17,31 +17,10 @@
   router('*', () => router.redirect('/'))
   router.start()
 
-  $: description = getDescription(path)
-  $: imagePath = getImagePath(path)
-  function getDescription(path) {
-    switch (path) {
-      case '/affiliates':
-        return 'Enjoy discounts on products I use and love with my affiliate links! 😍'
-      case '/continuingeducation':
-        return 'Try these awesome programs for your Continuing Education Credit! 🤓'
-      case '/pilatesstudentsmanual':
-        return 'Helping you to get the most out of your next Pilates class! 😎'
-      case '/pilatesteachersmanual':
-        return 'Your guide to becoming a great Pilates teacher! 💪'
-      default:
-        return "Links to Olivia's podcasts, social, website, and more! 😍"
-    }
-  }
-  function getImagePath(path) {
-    switch (path) {
-      case '/pilatesstudentsmanual':
-        return 'https://links.oliviabioni.com/assets/og_psm.png'
-      case '/pilatesteachersmanual':
-        return 'https://links.oliviabioni.com/assets/og_ptm.png'
-      default:
-        return 'https://links.oliviabioni.com/assets/og_image.jpg'
-    }
+  $: meta = getMeta(path)
+  function getMeta(currentPath) {
+    for (const { path: pagePath, meta: pageMeta } of Object.values(config))
+      if (currentPath === pagePath) return pageMeta
   }
 </script>
 
@@ -54,14 +33,14 @@
 <svelte:head>
   <meta
     name="description"
-    content={`${description} Support my work on Buy Me A Coffee. ☕️`} />
+    content={`${meta.description} Support my work on Buy Me A Coffee. ☕️`} />
   <meta
     property="og:description"
-    content={`${description} Support my work on Buy Me A Coffee. ☕️`} />
+    content={`${meta.description} Support my work on Buy Me A Coffee. ☕️`} />
   <meta property="og:title" content="Links | Olivia Bioni Wellness" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content={`https://links.oliviabioni.com${path}`} />
-  <meta property="og:image" content={imagePath} />
+  <meta property="og:image" content={meta.imagePath} />
 </svelte:head>
 
 <main class="min-h-screen">
