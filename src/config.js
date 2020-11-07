@@ -1,5 +1,6 @@
 export default {
   home: {
+    path: '/',
     isHome: true,
     links: [
       {
@@ -47,6 +48,7 @@ export default {
     ],
   },
   affiliates: {
+    path: '/affiliates',
     descriptionHtml:
       'Here are some products I use and love. ❤️<br />Click any button below and get a discount on your first order! 🤩',
     links: [
@@ -106,6 +108,7 @@ export default {
     ],
   },
   continuingEducation: {
+    path: '/continuingeducation',
     descriptionHtml:
       'My favorite programs for earning Continuing Education Credits. 👍<br /> I might get commissions from the following links.',
     links: [
@@ -119,6 +122,7 @@ export default {
     ],
   },
   pilatesStudentsManual: {
+    path: '/pilatesstudentsmanual',
     descriptionHtml:
       'Helping you to get the most out of your next Pilates class!',
     links: [
@@ -156,6 +160,7 @@ export default {
     ],
   },
   pilatesTeachersManual: {
+    path: '/pilatesteachersmanual',
     descriptionHtml: 'Your guide to becoming a great Pilates teacher!',
     links: [
       {
