@@ -5,7 +5,7 @@
 
   let path, props
   function setRoute(pageConfig) {
-    const { path: pagePath, ...pageProps } = pageConfig
+    const { path: pagePath, props: pageProps } = pageConfig
     router(pagePath, () => ([path, props] = [pagePath, pageProps]))
   }
 
