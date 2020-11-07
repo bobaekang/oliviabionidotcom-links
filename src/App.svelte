@@ -3,26 +3,17 @@
   import Page from './Page.svelte'
   import config from './config'
 
-  let props, path
-  router('/', () => ([props, path] = [config.home, '/']))
-  router(
-    '/affiliates',
-    () => ([props, path] = [config.affiliates, '/affiliates'])
-  )
-  router(
-    '/continuingeducation',
-    () => ([props, path] = [config.continuingEducation, '/continuingeducation'])
-  )
-  router(
-    '/pilatesstudentsmanual',
-    () =>
-      ([props, path] = [config.pilatesStudentsManual, '/pilatesstudentsmanual'])
-  )
-  router(
-    '/pilatesteachersmanual',
-    () =>
-      ([props, path] = [config.pilatesTeachersManual, '/pilatesteachersmanual'])
-  )
+  let path, props
+  function setRoute(pageConfig) {
+    const { path: pagePath, ...pageProps } = pageConfig
+    router(pagePath, () => ([path, props] = [pagePath, pageProps]))
+  }
+
+  setRoute(config.home)
+  setRoute(config.affiliates)
+  setRoute(config.continuingEducation)
+  setRoute(config.pilatesStudentsManual)
+  setRoute(config.pilatesTeachersManual)
   router('*', () => router.redirect('/'))
   router.start()
 
