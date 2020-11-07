@@ -48,6 +48,10 @@ export default {
         },
       ],
     },
+    meta: {
+      description: "Links to Olivia's podcasts, social, website, and more! 😍",
+      imagePath: 'https://links.oliviabioni.com/assets/og_image.jpg',
+    },
   },
   affiliates: {
     path: '/affiliates',
@@ -110,6 +114,11 @@ export default {
         },
       ],
     },
+    meta: {
+      description:
+        'Enjoy discounts on products I use and love with my affiliate links! 😍',
+      imagePath: 'https://links.oliviabioni.com/assets/og_image.jpg',
+    },
   },
   continuingEducation: {
     path: '/continuingeducation',
@@ -126,6 +135,11 @@ export default {
             '"Become the Pilates Instructor Clients Can\'t Live Without!"',
         },
       ],
+    },
+    meta: {
+      description:
+        'Try these awesome programs for your Continuing Education Credit! 🤓',
+      imagePath: 'https://links.oliviabioni.com/assets/og_image.jpg',
     },
   },
   pilatesStudentsManual: {
@@ -166,6 +180,11 @@ export default {
           title: 'Save on products I love ❤️',
         },
       ],
+    },
+    meta: {
+      description:
+        'Helping you to get the most out of your next Pilates class! 😎',
+      imagePath: 'https://links.oliviabioni.com/assets/og_psm.png',
     },
   },
   pilatesTeachersManual: {
@@ -211,6 +230,10 @@ export default {
           title: 'Save on products I love ❤️',
         },
       ],
+    },
+    meta: {
+      description: 'Your guide to becoming a great Pilates teacher! 💪',
+      imagePath: 'https://links.oliviabioni.com/assets/og_ptm.png',
     },
   },
 }
