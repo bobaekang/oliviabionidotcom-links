@@ -1,4 +1,5 @@
 <script>
+  import { fade } from 'svelte/transition'
   import Profile from './components/Profile.svelte'
   import LinkButton from './components/LinkButton.svelte'
 
@@ -10,7 +11,7 @@
 <div class="flex flex-wrap justify-center">
   <div class={isHome ? 'mt-8 mb-4' : 'mb-4'}>
     {#if !isHome}
-      <a class="block text-center text-white italic mb-2" href="/">
+      <a in:fade class="block text-center text-white italic mb-2" href="/">
         {'< Back to home'}
       </a>
     {/if}
