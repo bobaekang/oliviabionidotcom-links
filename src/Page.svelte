@@ -23,7 +23,7 @@
         {@html descriptionHtml}
       </div>
     {/if}
-    {#each links as link}
+    {#each links as link (Math.random())}
       <LinkButton {...link} />
     {/each}
   </div>
