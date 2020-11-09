@@ -1,4 +1,6 @@
 <script>
+  import { fade } from 'svelte/transition'
+
   export let avatar
   export let href
   export let newtab
@@ -7,6 +9,7 @@
 </script>
 
 <a
+  in:fade
   class="flex align-center w-full border border-solid border-white
     hover:bg-white hover:bg-opacity-25 text-white rounded-lg my-4 p-4"
   {href}
