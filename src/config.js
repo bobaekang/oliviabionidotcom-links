@@ -134,6 +134,14 @@ export default {
           detail:
             '"Become the Pilates Instructor Clients Can\'t Live Without!"',
         },
+        {
+          avatar: 'assets/chelseacorley.png',
+          href: 'https://links.oliviabioni.com/chelseacorley-nov-2020',
+          newtab: true,
+          title: '50% OFF! What You Say Matters November 2020 Cohort',
+          detail:
+            "Sign up by 11/19/2020 for Chelsea's in-depth moter learning theory course with Black Friday discount",
+        },
       ],
     },
     meta: {
