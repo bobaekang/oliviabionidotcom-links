@@ -7,32 +7,32 @@ export default {
       {
         avatar: 'assets/psm.jpg',
         href: 'https://pilatesstudentsmanual.oliviabioni.com',
-        newtab: true,
+        external: true,
         title: 'Listen to Pilates Students’ Manual podcast 🎧',
       },
       {
         avatar: 'assets/youtube.png',
         href:
           'https://www.youtube.com/channel/UCOLgATdG1_PDxMiFOuv_gwg/search?query=Pilates+Students%27+Manual',
-        newtab: true,
+        external: true,
         title: "Find Pilates Students' Manual on YouTube",
       },
       {
         avatar: 'assets/instagram.png',
         href: 'https://www.instagram.com/pilatesstudentsmanual/',
-        newtab: true,
+        external: true,
         title: 'Follow @PilatesStudentsManual',
       },
       {
         avatar: 'assets/facebook.png',
         href: 'https://facebook.com/pilatesstudentsmanual/',
-        newtab: true,
+        external: true,
         title: "Like Pilates Students' Manual page",
       },
       {
         avatar: 'assets/discount.svg',
         href: '/affiliates',
-        newtab: false,
+        external: false,
         title: 'Save on products I love ❤️',
       },
     ],
