@@ -11,14 +11,6 @@ export default {
         title: 'Integrated Teaching System by Chelsea Corley',
         detail: '"Become the Pilates Instructor Clients Can\'t Live Without!"',
       },
-      {
-        avatar: 'assets/chelseacorley.png',
-        href: 'https://links.oliviabioni.com/chelseacorley-nov-2020',
-        external: true,
-        title: '50% OFF! What You Say Matters on-demand access',
-        detail:
-          "Sign up by 12/1/2020 for Chelsea's in-depth moter learning theory course with Black Friday discount",
-      },
     ],
   },
   meta: {
