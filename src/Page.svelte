@@ -3,8 +3,8 @@
   import Profile from './components/Profile.svelte'
   import LinkButton from './components/LinkButton.svelte'
 
-  export let isHome
-  export let descriptionHtml
+  export let isHome = false
+  export let descriptionHtml = ''
   export let links
 </script>
 

@@ -5,7 +5,7 @@
   export let href
   export let external
   export let title
-  export let detail
+  export let detail = ''
 </script>
 
 <a
