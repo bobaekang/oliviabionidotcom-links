@@ -42,13 +42,6 @@ export default {
         title: 'Package Free zero waste shopping',
         detail: '$10 off your first order and go green!',
       },
-      {
-        avatar: 'assets/boka.svg',
-        href: 'https://go.referralcandy.com/share/3H4X728',
-        external: true,
-        title: 'Boka toothpaste',
-        detail: '15% off of your first order!',
-      },
     ],
   },
   meta: {
