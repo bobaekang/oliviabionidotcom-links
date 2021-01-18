@@ -1,11 +1,17 @@
 <script>
+  import { afterUpdate } from 'svelte'
   import { fade } from 'svelte/transition'
   import Profile from './components/Profile.svelte'
   import LinkButton from './components/LinkButton.svelte'
+  import { scrollToTop } from './utils'
 
   export let isHome = false
   export let descriptionHtml = ''
   export let links
+
+  afterUpdate(() => {
+    if (window.scrollY !== 0) scrollToTop()
+  })
 </script>
 
 <div class="flex flex-wrap justify-center">

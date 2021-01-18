@@ -3,15 +3,11 @@
   import Page from './Page.svelte'
   import BackToTopButton from './components/BackToTopButton.svelte'
   import config from './config'
-  import { scrollToTop } from './utils'
 
   let path, props
   function setRoute(pageConfig) {
     const { path: pagePath, props: pageProps } = pageConfig
-    router(pagePath, () => {
-      ;[path, props] = [pagePath, pageProps]
-      scrollToTop()
-    })
+    router(pagePath, () => ([path, props] = [pagePath, pageProps]))
   }
 
   setRoute(config.home)
