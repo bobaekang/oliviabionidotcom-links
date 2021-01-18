@@ -1,16 +1,9 @@
 <script>
   import { fade } from 'svelte/transition'
+  import { scrollToTop } from '../utils'
 
   let y
   $: hidden = y < 100
-
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'smooth',
-    })
-  }
 </script>
 
 <svelte:window bind:scrollY={y} />
