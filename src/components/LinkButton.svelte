@@ -28,7 +28,8 @@
       <img
         class="h-4 w-4"
         src="../assets/external-link.svg"
-        alt="external link" />
+        alt="external link"
+      />
     {/if}
   </div>
 </a>

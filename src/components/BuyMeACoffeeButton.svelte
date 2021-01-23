@@ -1,3 +1,17 @@
+<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" />
+<a
+  class="bmc-button"
+  target="_blank"
+  href="https://www.buymeacoffee.com/oliviapodcasts">
+  <img
+    src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
+    alt="Buy me a coffee"
+  />
+  <span style="margin-left:5px;font-size:24px !important;">
+    Buy me a coffee
+  </span>
+</a>
+
 <style>
   .bmc-button img {
     height: 34px !important;
@@ -36,16 +50,3 @@
     color: #ffffff !important;
   }
 </style>
-
-<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" />
-<a
-  class="bmc-button"
-  target="_blank"
-  href="https://www.buymeacoffee.com/oliviapodcasts">
-  <img
-    src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
-    alt="Buy me a coffee" />
-  <span style="margin-left:5px;font-size:24px !important;">
-    Buy me a coffee
-  </span>
-</a>

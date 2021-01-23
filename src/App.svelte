@@ -25,19 +25,15 @@
   }
 </script>
 
-<style>
-  main {
-    background-color: #c27ba0;
-  }
-</style>
-
 <svelte:head>
   <meta
     name="description"
-    content={`${meta.description} Support my work on Buy Me A Coffee. ☕️`} />
+    content={`${meta.description} Support my work on Buy Me A Coffee. ☕️`}
+  />
   <meta
     property="og:description"
-    content={`${meta.description} Support my work on Buy Me A Coffee. ☕️`} />
+    content={`${meta.description} Support my work on Buy Me A Coffee. ☕️`}
+  />
   <meta property="og:title" content="Links | Olivia Bioni Wellness" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content={`https://links.oliviabioni.com${path}`} />
@@ -50,3 +46,9 @@
   </div>
   <BackToTopButton />
 </main>
+
+<style>
+  main {
+    background-color: #c27ba0;
+  }
+</style>
