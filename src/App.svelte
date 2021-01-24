@@ -42,7 +42,7 @@
 
 <main class="min-h-screen">
   <div class="max-w-screen-sm m-auto p-4 lg:pt-20">
-    <Page {...props} />
+    <Page isHome={path === '/'} {...props} />
   </div>
   <BackToTopButton />
 </main>

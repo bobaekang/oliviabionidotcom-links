@@ -1,7 +1,6 @@
 export default {
   path: '/',
   props: {
-    isHome: true,
     links: [
       {
         avatar: 'assets/ptm.jpg',
