@@ -7,7 +7,7 @@
 
   export let isHome = false
   export let descriptionHtml = ''
-  export let links
+  export let links = []
 
   afterUpdate(() => {
     if (window.scrollY !== 0) scrollToTop()
