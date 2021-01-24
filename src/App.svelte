@@ -15,7 +15,10 @@
   setRoute(config.continuingEducation)
   setRoute(config.pilatesStudentsManual)
   setRoute(config.pilatesTeachersManual)
-  router('*', () => router.redirect('/'))
+  router('*', () => {
+    path = '/'
+    router.redirect('/')
+  })
   router.start()
 
   $: meta = getMeta(path)
