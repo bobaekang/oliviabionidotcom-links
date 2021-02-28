@@ -1,13 +1,13 @@
 export default {
   path: '/',
   props: {
+    featuredLink: {
+      avatar: 'assets/chelseacorley.png',
+      href: 'https://kinexologystudio.as.me/?appointmentType=20654383',
+      external: true,
+      title: 'Join my virtual Form Rolling Class at Kinexology! 🤙',
+    },
     links: [
-      {
-        avatar: 'assets/chelseacorley.png',
-        href: 'https://kinexologystudio.as.me/?appointmentType=20654383',
-        external: true,
-        title: 'Join my virtual Form Rolling Class at Kinexology! 🤙',
-      },
       {
         avatar: 'assets/ptm.jpg',
         href: '/pilatesteachersmanual',
