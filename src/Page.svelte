@@ -7,6 +7,7 @@
 
   export let isHome = false
   export let descriptionHtml = ''
+  export let featuredLink = undefined
   export let links = []
 
   afterUpdate(() => {
@@ -30,8 +31,16 @@
         {@html descriptionHtml}
       </div>
     {/if}
+    {#if featuredLink}
+      <div class="my-4">
+        <LinkButton featured {...featuredLink} />
+      </div>
+      <div class="my-8 opacity-50 text-center text-white text-sm">* * *</div>
+    {/if}
     {#each links as link (Math.random())}
-      <LinkButton {...link} />
+      <div class="my-4">
+        <LinkButton {...link} />
+      </div>
     {/each}
   </div>
 </div>
