@@ -26,6 +26,7 @@
     for (const { path: pagePath, meta: pageMeta } of Object.values(config))
       if (currentPath === pagePath) return pageMeta
   }
+
 </script>
 
 <svelte:head>
@@ -43,15 +44,9 @@
   <meta property="og:image" content={meta.imagePath} />
 </svelte:head>
 
-<main class="min-h-screen">
+<main class="min-h-screen bg-primary">
   <div class="max-w-screen-sm m-auto p-4 lg:pt-20">
     <Page isHome={path === '/'} {...props} />
   </div>
   <BackToTopButton />
 </main>
-
-<style>
-  main {
-    background-color: #c27ba0;
-  }
-</style>
