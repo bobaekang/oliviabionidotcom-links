@@ -10,11 +10,11 @@
     router(pagePath, () => ([path, props] = [pagePath, pageProps]))
   }
 
-  setRoute(config.home)
-  setRoute(config.affiliates)
-  setRoute(config.continuingEducation)
-  setRoute(config.pilatesStudentsManual)
-  setRoute(config.pilatesTeachersManual)
+  setRoute(config.page.home)
+  setRoute(config.page.affiliates)
+  setRoute(config.page.continuingEducation)
+  setRoute(config.page.pilatesStudentsManual)
+  setRoute(config.page.pilatesTeachersManual)
   router('*', () => {
     path = '/'
     router.redirect('/')
@@ -23,7 +23,7 @@
 
   $: meta = getMeta(path)
   function getMeta(currentPath) {
-    for (const { path: pagePath, meta: pageMeta } of Object.values(config))
+    for (const { path: pagePath, meta: pageMeta } of Object.values(config.page))
       if (currentPath === pagePath) return pageMeta
   }
 
