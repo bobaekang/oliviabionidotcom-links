@@ -3,10 +3,11 @@
 
   export let avatar
   export let href
-  export let featured
+  export let featured = false
   export let external
   export let title
   export let detail = ''
+
 </script>
 
 {#if featured}
