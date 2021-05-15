@@ -2,6 +2,7 @@
   import router from 'page'
   import Page from './Page.svelte'
   import BackToTopButton from './components/BackToTopButton.svelte'
+  import Banner from './components/Banner.svelte'
   import config from './config'
 
   let path, props
@@ -48,5 +49,10 @@
   <div class="max-w-screen-sm m-auto p-4 lg:pt-20">
     <Page isHome={path === '/'} {...props} />
   </div>
-  <BackToTopButton />
+  <div class="fixed bottom-0 w-full">
+    <BackToTopButton />
+    {#if config.banner}
+      <Banner {...config.banner} />
+    {/if}
+  </div>
 </main>
