@@ -28,6 +28,11 @@
       if (currentPath === pagePath) return pageMeta
   }
 
+  let showBanner = config.banner !== undefined
+  function onBannerClose() {
+    showBanner = false
+  }
+
 </script>
 
 <svelte:head>
@@ -48,15 +53,15 @@
 <main class="min-h-screen bg-primary">
   <div
     class={`max-w-screen-sm m-auto p-4 lg:pt-20${
-      config.banner ? ' pb-28 lg:pb-24' : ''
+      showBanner ? ' pb-28 lg:pb-24' : ''
     }`}
   >
     <Page isHome={path === '/'} {...props} />
   </div>
   <div class="fixed bottom-0 w-full">
     <BackToTopButton />
-    {#if config.banner}
-      <Banner {...config.banner} />
+    {#if showBanner}
+      <Banner {...config.banner} {onBannerClose} />
     {/if}
   </div>
 </main>
