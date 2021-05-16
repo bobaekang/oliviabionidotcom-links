@@ -46,7 +46,11 @@
 </svelte:head>
 
 <main class="min-h-screen bg-primary">
-  <div class="max-w-screen-sm m-auto p-4 lg:pt-20">
+  <div
+    class={`max-w-screen-sm m-auto p-4 lg:pt-20${
+      config.banner ? ' pb-28 lg:pb-24' : ''
+    }`}
+  >
     <Page isHome={path === '/'} {...props} />
   </div>
   <div class="fixed bottom-0 w-full">
