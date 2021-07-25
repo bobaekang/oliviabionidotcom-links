@@ -32,7 +32,6 @@
   function onBannerClose() {
     showBanner = false
   }
-
 </script>
 
 <svelte:head>
@@ -58,10 +57,10 @@
   >
     <Page isHome={path === '/'} {...props} />
   </div>
-  <div class="fixed bottom-0 w-full">
-    <BackToTopButton />
-    {#if showBanner}
+  <BackToTopButton withBanner={showBanner} />
+  {#if showBanner}
+    <div class="fixed bottom-0 w-full">
       <Banner {...config.banner} {onBannerClose} />
-    {/if}
-  </div>
+    </div>
+  {/if}
 </main>

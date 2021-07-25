@@ -2,9 +2,10 @@
   import { fade } from 'svelte/transition'
   import { scrollToTop } from '../utils'
 
+  export let withBanner = false
+
   let y
   $: hidden = y < 100
-
 </script>
 
 <svelte:window bind:scrollY={y} />
@@ -12,7 +13,9 @@
 {#if !hidden}
   <button
     transition:fade
-    class="float-right bg-white rounded-md bg-opacity-25 hover:bg-opacity-50 p-3 sm:p-4 m-6 sm:mx-8"
+    class={`fixed bottom-0 right-0 bg-white rounded-md bg-opacity-25 hover:bg-opacity-50 p-3 sm:p-4 m-6 sm:mx-8 ${
+      withBanner ? ' mb-28 lg:mb-24' : ''
+    }`}
     on:click={scrollToTop}
   >
     <svg
