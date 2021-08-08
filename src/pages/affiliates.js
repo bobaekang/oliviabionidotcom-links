@@ -42,6 +42,23 @@ export default {
         title: 'Package Free zero waste shopping',
         detail: '$10 off your first order and go green!',
       },
+      {
+        avatar: 'assets/dailyharvest.svg',
+        href:
+          'https://daily-harvest.com/r/RE-8RA7THA?utm_source=ReferAFriend&utm_campaign=welcome2&utm_medium=referral&utm_content=account',
+        external: true,
+        title: 'Daily Harvest meal delivery',
+        detail:
+          '$35 off your first purchase! Organic deliciousness, ready in minutes.',
+      },
+      {
+        avatar: 'assets/girlfriendcollective.webp',
+        href:
+          'https://www.girlfriend.com/?sref_id=qccf4x7&utm_campaign=referral_program&utm_source=loyalty',
+        external: true,
+        title: 'Girlfriend Collective activewear',
+        detail: '$10 off your first purchase of ethically made activewear!',
+      },
     ],
   },
   meta: {
