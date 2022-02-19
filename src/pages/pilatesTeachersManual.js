@@ -2,14 +2,6 @@ export default {
   path: '/pilatesteachersmanual',
   props: {
     descriptionHtml: 'Your guide to becoming a great Pilates teacher!',
-    featuredLink: {
-      avatar: 'assets/consciouscounsel.png',
-      href:
-        'https://sso.teachable.com/secure/357916/checkout/3282459/dont-get-sued',
-      external: true,
-      title: "Don't Get Sued: Legal Essentials for Wellness Professionals ⚖️",
-      detail: 'Use coupon code "PTM" to access the course for $0!',
-    },
     links: [
       {
         avatar: 'assets/ptm.jpg',

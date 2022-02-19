@@ -2,10 +2,11 @@ export default {
   path: '/',
   props: {
     featuredLink: {
-      avatar: 'assets/chelseacorley.png',
-      href: 'https://kinexologystudio.as.me/?appointmentType=20654383',
+      avatar: 'assets/pregnant.png',
+      href: 'https://forms.gle/2JJwbDJZi5ub5YKi8',
       external: true,
-      title: 'Join my virtual Foam Rolling Class at Kinexology! 🤙',
+      title: 'FREE WEBINAR: Working with Pregnant Clients 📚',
+      detail: 'Sign up to gain confidence working with prenatal clients!',
     },
     links: [
       {
