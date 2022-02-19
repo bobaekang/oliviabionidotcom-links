@@ -2,6 +2,13 @@ export default {
   path: '/pilatesteachersmanual',
   props: {
     descriptionHtml: 'Your guide to becoming a great Pilates teacher!',
+    featuredLink: {
+      avatar: 'assets/pregnant.png',
+      href: 'https://forms.gle/2JJwbDJZi5ub5YKi8',
+      external: true,
+      title: 'FREE WEBINAR: Working with Pregnant Clients 📚',
+      detail: 'Sign up to gain confidence working with prenatal clients!',
+    },
     links: [
       {
         avatar: 'assets/ptm.jpg',
