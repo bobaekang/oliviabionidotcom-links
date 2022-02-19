@@ -2,9 +2,9 @@
   "name": "svelte-app",
   "version": "1.0.0",
   "scripts": {
-    "build:tailwind": "NODE_ENV=production tailwindcss build src/tailwind.css -o public/global.css",
+    "build:tailwind": "NODE_ENV=production tailwindcss build -i src/tailwind.css -o public/global.css",
     "build": "npm run build:tailwind && rollup -c",
-    "dev:tailwind": "tailwindcss build src/tailwind.css -o public/global.css",
+    "dev:tailwind": "tailwindcss build -i src/tailwind.css -o public/global.css",
     "dev": "npm run dev:tailwind && rollup -c -w",
     "start": "sirv public --single",
     "format": "prettier --write ."
