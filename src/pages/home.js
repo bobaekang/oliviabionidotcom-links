@@ -1,6 +1,12 @@
 export default {
   path: '/',
   props: {
+    featuredLink: {
+      avatar: 'assets/breatheeducation.png',
+      href: 'https://breathe-education.com/masterclasses/',
+      external: true,
+      title: 'Join my Masterclass at Breathe Education 💪',
+    },
     links: [
       {
         avatar: 'assets/ptm.jpg',
@@ -37,12 +43,6 @@ export default {
         href: 'https://www.instagram.com/oliviabioniwellness/',
         external: true,
         title: 'Follow me @OliviaBioniWellness',
-      },
-      {
-        avatar: 'favicon.ico',
-        href: 'https://wellness.oliviabioni.com',
-        external: true,
-        title: 'Check out my website ✨',
       },
     ],
   },
