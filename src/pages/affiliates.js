@@ -21,35 +21,11 @@ export default {
           '$10 off your first purchase of this delicious, portable smoothie subscription!',
       },
       {
-        avatar: 'assets/winc.png',
-        href: 'http://www.winc.com/hi/obioni',
-        external: true,
-        title: 'Winc wine subscription',
-        detail: '$22 off your first order of wine!',
-      },
-      {
-        avatar: 'assets/misfits.svg',
-        href: 'https://www.misfitsmarket.com/',
-        external: true,
-        title: 'Misfits Market organic produce',
-        detail:
-          '25% off of your first order! Use discount code: COOKWME-QO3TQM',
-      },
-      {
         avatar: 'assets/packagefree.png',
         href: 'http://rwrd.io/iamkmza',
         external: true,
         title: 'Package Free zero waste shopping',
         detail: '$10 off your first order and go green!',
-      },
-      {
-        avatar: 'assets/dailyharvest.svg',
-        href:
-          'https://daily-harvest.com/r/RE-8RA7THA?utm_source=ReferAFriend&utm_campaign=welcome2&utm_medium=referral&utm_content=account',
-        external: true,
-        title: 'Daily Harvest meal delivery',
-        detail:
-          '$35 off your first purchase! Organic deliciousness, ready in minutes.',
       },
       {
         avatar: 'assets/girlfriendcollective.webp',
