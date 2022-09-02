@@ -1,12 +1,6 @@
 export default {
   path: '/',
   props: {
-    featuredLink: {
-      avatar: 'assets/breatheeducation.png',
-      href: 'https://breathe-education.com/masterclasses/',
-      external: true,
-      title: 'Join my Masterclass at Breathe Education 💪',
-    },
     links: [
       {
         avatar: 'assets/ptm.jpg',
