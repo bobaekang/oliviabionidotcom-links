@@ -1,6 +1,13 @@
 export default {
   path: '/',
   props: {
+    featuredLink: {
+      avatar: 'assets/npcp-favicon.png',
+      href: 'https://www.buymeacoffee.com/oliviapodcasts/e/103875',
+      external: true,
+      title: 'Workshop: Creating An Inclusive Class For Prenatal Clients 🤰',
+      detail: 'Earn 3 CECs with me. Buy Me A Coffee members get 50% off!',
+    },
     links: [
       {
         avatar: 'assets/ptm.jpg',
