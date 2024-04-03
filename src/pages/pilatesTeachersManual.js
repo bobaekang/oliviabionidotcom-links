@@ -5,7 +5,7 @@ export default {
     links: [
       {
         avatar: 'assets/ptm.jpg',
-        href: 'https://pilatesteachersmanual.oliviabioni.com',
+        href: 'https://pilatesteachersmanual.buzzsprout.com',
         external: true,
         title: 'Listen to Pilates Teachers’ Manual podcast 🎧',
       },
