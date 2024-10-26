@@ -5,7 +5,7 @@
   import Banner from './components/Banner.svelte'
   import config from './config'
 
-  let path, props
+  let path = $state(), props = $state()
   function setRoute(pageConfig) {
     const { path: pagePath, props: pageProps } = pageConfig
     router(pagePath, () => ([path, props] = [pagePath, pageProps]))
@@ -22,16 +22,16 @@
   })
   router.start()
 
-  $: meta = getMeta(path)
   function getMeta(currentPath) {
     for (const { path: pagePath, meta: pageMeta } of Object.values(config.page))
       if (currentPath === pagePath) return pageMeta
   }
 
-  let showBanner = config.banner !== undefined
+  let showBanner = $state(config.banner !== undefined)
   function onBannerClose() {
     showBanner = false
   }
+  let meta = $derived(getMeta(path))
 </script>
 
 <svelte:head>

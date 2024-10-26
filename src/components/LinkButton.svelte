@@ -1,12 +1,25 @@
 <script>
   import { fade } from 'svelte/transition'
 
-  export let avatar
-  export let href
-  export let featured = false
-  export let external
-  export let title
-  export let detail = ''
+  /**
+   * @typedef {Object} Props
+   * @property {any} avatar
+   * @property {any} href
+   * @property {boolean} [featured]
+   * @property {any} external
+   * @property {any} title
+   * @property {string} [detail]
+   */
+
+  /** @type {Props} */
+  let {
+    avatar,
+    href,
+    featured = false,
+    external,
+    title,
+    detail = ''
+  } = $props();
 
 </script>
 

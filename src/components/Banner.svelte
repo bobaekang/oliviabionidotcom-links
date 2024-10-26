@@ -1,9 +1,21 @@
 <script>
-  export let href = ''
-  export let mainLabel = ''
-  export let closeLabel = 'Close'
-  export let message = ''
-  export let onBannerClose = () => {}
+  /**
+   * @typedef {Object} Props
+   * @property {string} [href]
+   * @property {string} [mainLabel]
+   * @property {string} [closeLabel]
+   * @property {string} [message]
+   * @property {any} [onBannerClose]
+   */
+
+  /** @type {Props} */
+  let {
+    href = '',
+    mainLabel = '',
+    closeLabel = 'Close',
+    message = '',
+    onBannerClose = () => {}
+  } = $props();
 
 </script>
 
@@ -22,7 +34,7 @@
     <button
       class="hover:bg-secondary hover:bg-opacity-10 border border-solid border-secondary font-semibold rounded-lg m-1 px-4 py-2 "
       type="button"
-      on:click={onBannerClose}>{closeLabel}</button
+      onclick={onBannerClose}>{closeLabel}</button
     >
   </div>
 </form>

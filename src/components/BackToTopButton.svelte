@@ -2,10 +2,16 @@
   import { fade } from 'svelte/transition'
   import { scrollToTop } from '../utils'
 
-  export let withBanner = false
+  /**
+   * @typedef {Object} Props
+   * @property {boolean} [withBanner]
+   */
 
-  let y
-  $: hidden = y < 100
+  /** @type {Props} */
+  let { withBanner = false } = $props()
+
+  let y = $state()
+  let hidden = $derived(y < 100)
 </script>
 
 <svelte:window bind:scrollY={y} />
@@ -16,7 +22,8 @@
     class={`fixed bottom-0 right-0 bg-white rounded-md bg-opacity-25 hover:bg-opacity-50 p-3 sm:p-4 m-6 sm:mx-8 ${
       withBanner ? ' mb-28 lg:mb-24' : ''
     }`}
-    on:click={scrollToTop}
+    onclick={scrollToTop}
+    aria-label="Back to top"
   >
     <svg
       version="1.1"

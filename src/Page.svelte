@@ -1,16 +1,17 @@
 <script>
-  import { afterUpdate } from 'svelte'
   import { fade } from 'svelte/transition'
-  import Profile from './components/Profile.svelte'
   import LinkButton from './components/LinkButton.svelte'
+  import Profile from './components/Profile.svelte'
   import { scrollToTop } from './utils'
 
-  export let isHome = false
-  export let descriptionHtml = ''
-  export let featuredLink = undefined
-  export let links = []
+  let {
+    isHome = false,
+    descriptionHtml = '',
+    featuredLink = undefined,
+    links = [],
+  } = $props()
 
-  afterUpdate(() => {
+  $effect(() => {
     if (window.scrollY !== 0) scrollToTop()
   })
 </script>
