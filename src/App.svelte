@@ -5,14 +5,14 @@
   import Banner from './components/Banner.svelte'
   import config from './config'
 
-  let path = $state(), props = $state()
+  let path = $state(),
+    props = $state()
   function setRoute(pageConfig) {
     const { path: pagePath, props: pageProps } = pageConfig
     router(pagePath, () => ([path, props] = [pagePath, pageProps]))
   }
 
   setRoute(config.page.home)
-  setRoute(config.page.affiliates)
   setRoute(config.page.continuingEducation)
   setRoute(config.page.pilatesStudentsManual)
   setRoute(config.page.pilatesTeachersManual)

@@ -3,6 +3,13 @@ export default {
   props: {
     links: [
       {
+        avatar: 'assets/shop.png',
+        href: 'https://shop.oliviabioni.com',
+        external: true,
+        featured: true,
+        title: 'Get your podcast merch ✨ ',
+      },
+      {
         avatar: 'assets/ptm.jpg',
         href: '/pilatesteachersmanual',
         external: false,
@@ -19,12 +26,6 @@ export default {
         href: '/continuingeducation',
         external: false,
         title: 'Earn your Continuing Education Credits 📔',
-      },
-      {
-        avatar: 'assets/discount.svg',
-        href: '/affiliates',
-        external: false,
-        title: 'Save on products I love ❤️',
       },
       {
         avatar: 'assets/youtube.png',
