@@ -13,6 +13,7 @@
   }
 
   setRoute(config.page.home)
+  setRoute(config.page.affiliates)
   setRoute(config.page.continuingEducation)
   setRoute(config.page.pilatesStudentsManual)
   setRoute(config.page.pilatesTeachersManual)

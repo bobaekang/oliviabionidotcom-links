@@ -28,6 +28,12 @@ export default {
         title: 'Earn your Continuing Education Credits 📔',
       },
       {
+        avatar: 'assets/discount.svg',
+        href: '/affiliates',
+        external: false,
+        title: 'Save on products I love ❤️',
+      },
+      {
         avatar: 'assets/youtube.png',
         href: 'https://www.youtube.com/channel/UCOLgATdG1_PDxMiFOuv_gwg',
         external: true,
