@@ -1,14 +1,14 @@
 export default {
   path: '/',
   props: {
+    featuredLink: {
+      avatar: 'assets/shop.png',
+      href: 'https://shop.oliviabioni.com',
+      external: true,
+      featured: true,
+      title: 'Get your podcast merch ✨ ',
+    },
     links: [
-      {
-        avatar: 'assets/shop.png',
-        href: 'https://shop.oliviabioni.com',
-        external: true,
-        featured: true,
-        title: 'Get your podcast merch ✨ ',
-      },
       {
         avatar: 'assets/ptm.jpg',
         href: '/pilatesteachersmanual',
